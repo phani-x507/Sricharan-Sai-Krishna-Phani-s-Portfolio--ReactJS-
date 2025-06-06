@@ -3,7 +3,7 @@ import React from "react";
 export default function Home(){
     
     return(
-        <div className="container d-flex homeBody borders justify-content-around align-items-center">
+        <div className="container d-flex w-100 homeBody borders justify-content-around align-items-center">
           
                 <div className="container homeLeftDiv  borders">
                     <h1>Hello,</h1>

@@ -2,86 +2,94 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Style+Script&display=swap');
 
-body{
+body {
     /* background-color: rgb(62, 132, 212); */
 }
-*{
+
+* {
     font-family: 'Poppins';
-    
+
 }
-.borders{
+
+.borders {
     border: 1px solid transparent;
 }
 
-.Main_body{
-background-color: white;
-box-shadow: 0px 0px 15px 2px rgb(233, 233, 233);
+.Main_body {
+    background-color: white;
+    box-shadow: 0px 0px 15px 2px rgb(233, 233, 233);
 }
 
-.navBar{
+.navBar {
     height: 50px;
 
 }
-.navBar_LeftDiv h3{
+
+.navBar_LeftDiv h3 {
     font-size: 25px;
 
 }
-.custNavBtn{
-    border:1px solid transparent;
+
+.custNavBtn {
+    border: 1px solid transparent;
     background-color: transparent;
     margin: 0px 5px;
     font-size: 14px;
     transition-duration: 0.2s;
 }
-.custNavBtn:hover{
+
+.custNavBtn:hover {
     color: blueviolet;
     text-decoration: underline;
-    border:1px solid rgb(211, 211, 255);
+    border: 1px solid rgb(211, 211, 255);
     border-radius: 7px;
-}   
+}
 
-.navSearchBar_text{
+.navSearchBar_text {
     border: 1px solid lavender;
     border-radius: 8px;
     outline: none;
     transition-duration: 0.2s;
-    
+
 
 }
 
-input::placeholder{
+input::placeholder {
     font-size: 13px;
 }
 
-.navSearchBar_text:focus{
+.navSearchBar_text:focus {
     border: 1px solid grey;
-    padding:0px 10px;
+    padding: 0px 10px;
 }
 
 
 /* Home Css */
 
-.homeBody{
+.homeBody {
     height: 400px;
     margin-top: 10px;
 }
 
-.homeLeftDiv h1{
+.homeLeftDiv h1 {
     font-family: "Style Script", cursive;
-    font-weight: 600;  
+    font-weight: 600;
     font-size: 55px;
 }
-.homeLeftDiv h2+h2{
+
+.homeLeftDiv h2+h2 {
     font-weight: 600;
     color: rgb(58, 58, 151);
 
 }
-.homeLeftDiv p{
-    color:rgb(166, 166, 166);
+
+.homeLeftDiv p {
+    color: rgb(166, 166, 166);
     font-size: 15px;
 
 }
-.homeLeftDivButton{
+
+.homeLeftDivButton {
     border: 1px solid transparent;
     height: 38px;
     border-radius: 20px;
@@ -91,57 +99,133 @@ input::placeholder{
     transition-duration: 0.15s;
 }
 
-.bShadow1{
-    box-shadow:0px 0px 15px 2px rgb(235, 235, 235);
+.bShadow1 {
+    box-shadow: 0px 0px 15px 2px rgb(235, 235, 235);
 }
 
-.homeLeftDivButton:hover{
+.homeLeftDivButton:hover {
     background-color: coral;
 }
-.homeLeftDivButton:active{
+
+.homeLeftDivButton:active {
     background-color: crimson;
 }
-.homeRightDiv{
-background-color: rgb(243, 243, 243);
-max-width: 270px;
-height: 350px;
- border-radius: 50%;
- overflow: hidden;
+
+.homeRightDiv {
+    background-color: rgb(243, 243, 243);
+    max-width: 270px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .homeRightDiv img {
-    height:350px ;
+    height: 350px;
     width: 240px;
-   
 
-    
+
+
 }
-.projectBody h2{
-  font-family: "Style Script", cursive;
-    font-weight: 600;  
+
+.projectBody h2 {
+    font-family: "Style Script", cursive;
+    font-weight: 600;
     font-size: 55px;
 }
-.project_img{
+
+.project_img {
     height: 180px;
     height: 180px;
 }
-.projectDetails h3{
-   font-size: 24px;
-   font-weight: 600;
+
+.projectDetails h3 {
+    font-size: 24px;
+    font-weight: 600;
 }
-.projectDetails h3+p{
+
+.projectDetails h3+p {
     font-size: 12px;
     color: grey;
     text-align: justify;
 }
-.floatRight{
+
+.floatRight {
     float: right !important;
-  
+
 }
-.floatLeft{
+
+.floatLeft {
     float: left !important;
 }
-.floatNone{
+
+.floatNone {
     clear: both;
-    
+
+}
+.mobProjectImg{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .navBarRight {
+        display: none;
+    }
+
+    .navSearchBar {
+        display: none !important;
+    }
+
+    .homeLeftDiv {
+        margin-top: 10pxpx;
+    }
+
+    .homeRightDiv {
+        width: 150px;
+        height: 150px;
+    }
+
+    .homeLeftDiv h2 {
+        font-size: 18px;
+    }
+
+    .homeLeftDiv h2+h2 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .homeLeftDiv h2+h2+p {
+        font-size: 13px;
+    }
+
+    .homeBody {
+        height: auto;
+        padding-top: 0px !important;
+
+    }
+
+    .navBar_LeftDiv h3 {
+        font-size: 18px !important;
+    }
+    .homeLeftDivButton{
+        margin-bottom: 10px;
+    }
+    .floatRight{
+        float:none !important;
+    }
+    .projectBody div{
+        display: block !important;
+    }
+    .mobProjectImg{
+        display: block;
+        margin:10px
+    }
+    .project_img{
+        display: none;
+
+    }
+        .mobProjectImg img{
+        display: block;
+    }
+
+
 }

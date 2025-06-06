@@ -11,6 +11,7 @@ export default function Projects() {
 
 
                 <div className="container projectDetails ">
+                    <div className="container mobProjectImg"><img className="project_img" src="pana.webp" alt="" /></div>
                     <h3>Offline LLMs for Low-Spec Devices: A Study on Efficiency and Usability</h3>
                     <p>The rapid advancements in Offline Large Language Models (LLMs) have paved the way for efficient and privacy-focused AI applications. This project presents a comprehensive benchmarking and evaluation framework for Masked Language Models (MLMs) and Causal Language Models (CLMs) running entirely offline.</p>
                     <button className="homeLeftDivButton floatLeft ">Github <i class="bi bi-github"></i></button>
